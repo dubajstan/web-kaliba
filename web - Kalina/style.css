@@ -1,0 +1,111 @@
+body {
+    background-color: black;
+}
+
+
+.circle {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 50%;
+    top: 100px;
+    left: 200px;
+    transform: rotateZ(23.5deg);
+    position: relative;
+}
+
+.earth {
+    position: absolute;
+    animation: animate 150s linear normal;
+    width: 10000px;
+    height: 1000px;
+    background-repeat: repeat-x;
+    background-image: url(img/globe.png);
+}
+
+.content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: -20px -20px 40px 10px black inset;
+}
+
+.continents {
+    animation: animate-2 43s linear 3.5;
+    width: 1000px;
+}
+
+@keyframes animate {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(-3500px);
+    }
+}
+
+@keyframes animate-2 {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(-1000px);
+    }
+}
+
+.continent {
+    position: absolute;
+    transform: rotate(-23.5deg);
+}
+
+.content a{
+    color: white;
+    text-decoration: none;
+}
+
+.one{
+    top:100px;
+    left:140px;
+}
+
+.two{
+    top:266px;
+    left:264px;
+}
+
+.three{
+    top:80px;
+    left:490px;
+}
+
+.four{
+    top:200px;
+    left:510px;
+}
+
+.five{
+    top:100px;
+    left:680px;
+}
+
+.six{
+    top:290px;
+    left:810px;
+}
+
+.about{
+    width: 600px;
+    height: 800px;
+    position: absolute;
+    top: 50px;
+    left: 800px;
+    color: white;
+    display: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.about img {
+    width: 100%;
+    height: 300px;
+}
